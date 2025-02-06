@@ -1,0 +1,136 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 42px 76px 48px;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+}
+.header .header__logo {
+  cursor: pointer;
+  position: absolute;
+  left: 76px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header__mob_menu {
+  width: 63px;
+  height: 63px;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+}
+.header__mob_menu-line {
+  width: 40px;
+  border-radius: 8px;
+  height: 3px;
+  background-color: #000;
+}
+.header__modal {
+  position: fixed;
+  top: 42px;
+  right: -100%;
+  transition: 0.3s ease-in-out all;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 14px;
+  border: 6px solid rgba(204, 66, 56, 1);
+}
+.header__modal.active {
+  right: 26px;
+  transition: 0.3s ease-in-out all;
+  z-index: 5;
+}
+.header__modal_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0;
+  transition: 0.3s ease-in-out all;
+}
+.header__modal_overlay.active {
+  z-index: 4;
+  opacity: 0.5;
+  transition: 0.3s ease-in-out all;
+}
+
+.modal__nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 60px 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.modal__nav li a {
+  color: rgba(204, 66, 56, 1);
+}
+.wrapper.active {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header__modal .close__modal {
+  position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+
+  background-color: transparent;
+}
+.header__modal_top {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.header__modal .close__modal .close__line {
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  border-radius: 8px;
+  height: 3px;
+  background-color: #000;
+}
+.header__modal .close__modal .close__line:nth-child(1) {
+  transform: rotate(45deg);
+}
+.header__modal .close__modal .close__line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+.header .header__nav {
+  display: flex;
+  column-gap: 28px;
+}
+.header .header__nav li {
+  position: relative;
+}
+.header .header__nav li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: rgba(194, 40, 33, 1);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+.header .header__nav li:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.header .header__nav li a {
+  font-size: 20px;
+}

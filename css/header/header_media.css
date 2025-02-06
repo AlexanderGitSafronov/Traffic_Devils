@@ -1,0 +1,20 @@
+@media (max-width: 1199px) {
+  .header {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 991px) {
+  .header__pc_menu {
+    display: none;
+  }
+  .header__mob_menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 575px) {
+}

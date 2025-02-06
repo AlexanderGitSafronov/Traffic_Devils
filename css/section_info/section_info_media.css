@@ -1,0 +1,79 @@
+@media (max-width: 1199px) {
+  .section__info {
+    height: initial;
+  }
+  .potential__profit_wrpper {
+    flex-direction: column;
+  }
+  .potential__profit .potential__profit_info {
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+    margin-top: 40px;
+  }
+}
+
+/* Для планшетов и небольших экранов */
+@media (max-width: 991px) {
+  /* Стили для планшетов */
+}
+
+/* Для мобильных устройств */
+@media (max-width: 767px) {
+  .potential__profit .potential__profit_info {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .potential__profit .potential__profit_info .info__block {
+    text-align: center;
+  }
+  .section__slider {
+    padding: 10px;
+  }
+  .person__block_bottom {
+    padding: 0px;
+    border-top: none;
+  }
+  .block_border {
+    display: none;
+  }
+  .potential__profit .potential__profit_card {
+    max-width: 550px;
+  }
+  .range {
+    width: 450px;
+  }
+  .range-lines {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+    .potential__profit .potential__profit_card{
+        padding: 60px 30px 30px;
+    }
+  .potential__profit .potential__profit_card {
+    max-width: 410px;
+  }
+  .range {
+    width: 350px;
+  }
+  .profit_card_btn{
+    width: 250px;
+    height: 42px;
+  }
+  .profit_card_btn button{
+      max-width: 255px;
+      height: 42px;
+  }
+  .profit_card_btn button span:nth-child(2) {
+    font-size: 22px;
+}
+.profit_card_btn button span:nth-child(1) {
+    font-size: 12px;
+}
+.range-lines {
+    column-gap: 16px;
+  }
+ 
+}
