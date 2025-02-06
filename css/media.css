@@ -200,4 +200,8 @@
   .footer img {
     width: 131px;
   }
+  .person__block_bottom p {
+  
+    padding-left: 15px;
+  }
 }
