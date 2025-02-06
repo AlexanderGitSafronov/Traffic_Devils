@@ -19,7 +19,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   width: 50%;
-  height: 536px;
+  /* height: 536px; */
   display: flex;
   justify-content: flex-end;
   padding: 79px 88px 70px 0px;
@@ -33,6 +33,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 52px;
+ 
 }
 .section__form .form__inputs {
   display: flex;
@@ -179,7 +180,7 @@
   padding: 0px 17px;
 }
 .section__serving h3 {
-  font-size: 37px;
+  font-size: 36px;
   line-height: 53px;
   text-align: center;
   color: rgba(0, 0, 0, 0.8);

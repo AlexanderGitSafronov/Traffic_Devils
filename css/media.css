@@ -91,6 +91,7 @@
   }
   .section__serving .serving__block button {
     width: 100%;
+    font-size: 16px;
   }
   .philippe__donnet {
     padding: 45px 22px;
@@ -98,6 +99,8 @@
   }
   .philippe__donnet_desc {
     padding: 46px 35px;
+    background-image: url('../images/phillippe_mob_bg.png');
+    background-size: cover;
   }
   .philippe__donnet p {
     text-align: center;
@@ -128,7 +131,7 @@
   .section__form .section__form_filling {
     padding: 0px;
     background-image: none;
-    height: 387px;
+    /* height: 387px; */
     display: flex;
     justify-content: center;
   }

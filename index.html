@@ -73,7 +73,7 @@
           <div class="section__form_info">
             <h1>
               Investire 250 euro per raggiungere 5000 euro in una settimana vi
-              sembra impossibile? Con il Gruppo Generali potete fare ancora di
+              sembra impossibile? <br> Con il Gruppo Generali potete fare ancora di
               più!
             </h1>
           </div>
@@ -685,7 +685,14 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-      var swiper = new Swiper(".mySwiper", {});
+      var swiper = new Swiper(".mySwiper", {
+        autoHeight: true,
+        loop: true, // Цикличное пролистывание
+        autoplay: {
+          delay: 3000, // Задержка между переключениями (в миллисекундах)
+          disableOnInteraction: false, // Продолжает автопрокрутку после взаимодействий
+        },
+      });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
