@@ -1,3 +1,34 @@
+@media (max-width: 1920px) {
+  .section__form .section__form_filling {
+    background-position: right;
+  }
+  .section__form .section__form_info {
+    justify-content: center;
+  }
+  .section__serving .section__serving_wrapper {
+    justify-content: center;
+    column-gap: 80px;
+  }
+  .section__serving .section__serving_wrapper .section__serving_second {
+    column-gap: 80px;
+  }
+}
+@media (max-width: 1440px) {
+  .section__form .section__form_info {
+    justify-content: flex-end;
+  }
+  .section__serving .section__serving_wrapper {
+    justify-content: space-between;
+  }
+  .section__serving .section__serving_wrapper .section__serving_second {
+    column-gap: 22px;
+  }
+  .section__serving .section__serving_wrapper {
+    justify-content: center;
+    column-gap: 22px;
+  }
+}
+
 @media (max-width: 1199px) {
   .section__form {
     flex-direction: column;
@@ -93,26 +124,6 @@
     width: 100%;
     font-size: 16px;
   }
-  .philippe__donnet {
-    padding: 45px 22px;
-    padding-top: 320px;
-  }
-  .philippe__donnet_desc {
-    padding: 46px 35px;
-    background-image: url('../images/phillippe_mob_bg.png');
-    background-size: cover;
-  }
-  .philippe__donnet p {
-    text-align: center;
-  }
-  .philippe__donnet_img {
-    top: 45px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .philippe__donnet_img img {
-    width: 297px;
-  }
 }
 
 @media (max-width: 575px) {
@@ -131,7 +142,6 @@
   .section__form .section__form_filling {
     padding: 0px;
     background-image: none;
-    /* height: 387px; */
     display: flex;
     justify-content: center;
   }
@@ -201,7 +211,12 @@
     width: 131px;
   }
   .person__block_bottom p {
-  
     padding-left: 15px;
+  }
+  .person__block {
+    min-height: 500px;
+  }
+  .person__block_top {
+    column-gap: 22px;
   }
 }

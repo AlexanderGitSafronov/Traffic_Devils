@@ -8,6 +8,10 @@
   height: 1385px;
   color: #fff;
 }
+.philippe__donnet {
+  max-width: 1180px;
+  margin: 0 auto;
+}
 .philippe__donnet_img {
   position: absolute;
   top: 72px;
@@ -43,6 +47,8 @@
   font-weight: 700;
 }
 .potential__profit .potential__profit_wrpper {
+  max-width: 1600px;
+  margin: 0 auto;
   margin-top: 40px;
   display: flex;
   justify-content: space-between;

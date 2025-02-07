@@ -11,15 +11,34 @@
     column-gap: 100px;
     margin-top: 40px;
   }
+  .philippe__donnet {
+    padding: 45px 22px;
+    padding-top: 420px;
+  }
 }
 
-/* Для планшетов и небольших экранов */
-@media (max-width: 991px) {
-  /* Стили для планшетов */
-}
-
-/* Для мобильных устройств */
 @media (max-width: 767px) {
+  .philippe__donnet {
+    padding: 45px 22px;
+    padding-top: 320px;
+  }
+  .philippe__donnet_desc {
+    padding: 46px 35px;
+    background-image: url("../../images/phillippe_mob_bg.png");
+    background-size: cover;
+  }
+  .philippe__donnet p {
+    text-align: center;
+  }
+  .philippe__donnet_img {
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .philippe__donnet_img img {
+    width: 297px;
+  }
+
   .potential__profit .potential__profit_info {
     flex-direction: column;
     justify-content: center;
@@ -49,31 +68,30 @@
 }
 
 @media (max-width: 575px) {
-    .potential__profit .potential__profit_card{
-        padding: 60px 30px 30px;
-    }
+  .potential__profit .potential__profit_card {
+    padding: 60px 30px 30px;
+  }
   .potential__profit .potential__profit_card {
     max-width: 410px;
   }
   .range {
     width: 350px;
   }
-  .profit_card_btn{
+  .profit_card_btn {
     width: 250px;
     height: 42px;
   }
-  .profit_card_btn button{
-      max-width: 255px;
-      height: 42px;
+  .profit_card_btn button {
+    max-width: 255px;
+    height: 42px;
   }
   .profit_card_btn button span:nth-child(2) {
     font-size: 22px;
-}
-.profit_card_btn button span:nth-child(1) {
+  }
+  .profit_card_btn button span:nth-child(1) {
     font-size: 12px;
-}
-.range-lines {
+  }
+  .range-lines {
     column-gap: 16px;
   }
- 
 }
